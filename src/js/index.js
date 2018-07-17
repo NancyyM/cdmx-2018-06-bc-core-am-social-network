@@ -1,43 +1,36 @@
-  // Initialize Firebase
+ // Initialize Firebase
+
   var config = {
-    apiKey: "AIzaSyAw5cZOgGoVoog9prX44MlN1415wt-sYgs",
-    authDomain: "socialnetwork-lab.firebaseapp.com",
-    databaseURL: "https://socialnetwork-lab.firebaseio.com",
-    projectId: "socialnetwork-lab",
-    storageBucket: "",
-    messagingSenderId: "535657697568"
+    apiKey: "AIzaSyCihx2_wwaHazrySwOO0LLmdBCWtfZgoek",
+    authDomain: "login-35451.firebaseapp.com",
+    databaseURL: "https://login-35451.firebaseio.com",
+    projectId: "login-35451",
+    storageBucket: "login-35451.appspot.com",
+    messagingSenderId: "276377229885"
   };
   firebase.initializeApp(config);
 
-  $('#buttonGoogle').click(function () {
-    authGoogle();
-  });
+  const usuario = document.getElementById('user');
+  const clave = document.getElementById('password');
+  const btn = document.getElementById('cuenta');
+  
+  // console.log(usuario);
+  
+btn.addEventListener('click', e =>{
+const email = usuario.value;
+// console.log(email);
+const cl = clave.value;
+// console.log(cl);
+const auth = firebase.auth();
 
-  function authGoogle() {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    authentication(provider);
-  }
+const promise = auth.createUserWithEmailAndPassword(email, cl);
+promise.catch(e => console.log(e.message));
 
-  function authentication(provider) {
-    firebase.auth().signInWithPopup(provider).then(function(result) {
-      // This gives you a Google Access Token. You can use it to access the Google API.
-      var token = result.credential.accessToken;
-      // The signed-in user info.
-      var user = result.user;
-      console.log(result);
-      // ...
-    }).catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      console.log('errorCode');
-      var errorMessage = error.message;
-      console.log('errorMessage');
-      // The email of the user's account used.
-      var email = error.email;
-      console.log('email');
-      // The firebase.auth.AuthCredential type that was used.
-      var credential = error.credential;
-      console.log('credential');
-      // ...
-    });
-  }
+
+});
+
+
+  
+
+
+  
