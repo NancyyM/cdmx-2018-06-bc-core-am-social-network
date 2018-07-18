@@ -1,5 +1,4 @@
 // Initialize Firebase
-
 var config = {
     apiKey: "AIzaSyCihx2_wwaHazrySwOO0LLmdBCWtfZgoek",
     authDomain: "login-35451.firebaseapp.com",
@@ -25,6 +24,5 @@ const auth = firebase.auth();
 
 const promise = auth.createUserWithEmailAndPassword(email, cl);
 promise.catch(e => console.log(e.message));
-
 
 });
