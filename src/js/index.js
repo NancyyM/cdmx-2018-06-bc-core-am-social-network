@@ -15,11 +15,42 @@ const clave = document.getElementById('password1');
 const btn = document.getElementById('login');
 const btnUser = document.getElementById('checkIn');
 const mailCorrect = document.getElementById('emailCorrect')
+const btngoogle = document.getElementById('google')
 validateEmail = (user1)=>{
   var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   return regex.test(user1) ? true : false;
   
 };
+
+//BOTÓN PARA INGRESAR CON GOOGLE
+btngoogle.addEventListener('click', e =>{
+ entryGoogle();
+
+})
+
+entryGoogle = () => {
+provider = new firebase.auth.GoogleAuthProvider();  
+autentificate(provider);
+
+}
+
+autentificate = (provider) => {
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    
+    var token = result.credential.accessToken;
+    var user = result.user;
+  }).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+    var credential = error.credential;
+    console.log(error);
+  });
+
+
+}
+
+
 
 
 // REGISTRARSE.
@@ -37,7 +68,7 @@ let prub = user1.value;
   else{
     mailCorrect.innerHTML =  ('Ingrese un correo valido por favor');
   }
-  // validateEmail(user1 );
+
 });
 // INICIAR SESION.
 btn.addEventListener('click', e =>{
