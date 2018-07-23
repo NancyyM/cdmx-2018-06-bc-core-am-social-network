@@ -8,7 +8,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <!-- <script src="https://appis.google.com/js/platform.js" async defer></script> -->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <title>Login</title>
     
 </head>
@@ -35,11 +35,8 @@ if (response.authResponse) {
  console.log('User cancelled login or did not fully authorize.');
 }
 });
-                
-              FB.AppEvents.logPageView();   
-                
+              FB.AppEvents.logPageView();
             };
-          
             (function(d, s, id){
                var js, fjs = d.getElementsByTagName(s)[0];
                if (d.getElementById(id)) {return;}
@@ -49,7 +46,6 @@ if (response.authResponse) {
              }(document, 'script', 'facebook-jssdk'));
           </script>
     <!-- Termina logueo con facebook -->
-
 
     <div>  
         <h2>Iniciar sesión.</h2>
@@ -63,7 +59,12 @@ if (response.authResponse) {
         </div>
     </div>
     
+    <!-- INICIA BOTON PARA PRUEBA DE REFERENCIA HTML -->
+    <div>
+        <input type = "submit" id = "prueba" value = "prueba">
+    </div>
+    <!-- TERMINA BOTON PARA PRUEBA DE REFERENCIA HTML -->
+
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
-
