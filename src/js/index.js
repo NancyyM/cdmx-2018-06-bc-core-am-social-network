@@ -94,7 +94,7 @@ btn.addEventListener('click', e =>{
 
  // PRUEBA PARA LA REFERENCIA DE HTML'S
 prueba.addEventListener('click', e =>{
-location.href="file:///C:/LABORATORIA/Proyecto3_SocialNetwork/cdmx-2018-06-bc-core-am-social-network/src/prueba.html"; //aqui cambiar la direccion depende de donde se abra la pag
+location.href="https://nancyym.github.io/cdmx-2018-06-bc-core-am-social-network/src/prueba.html"; //aqui cambiar la direccion depende de donde se abra la pag
  });
 //TERMINA PRUEBA PARA LA REFERENCIA DE HTML'S
 
