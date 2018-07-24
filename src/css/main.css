@@ -57,16 +57,16 @@ div.coments{
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: pink;
-    background-color: hsl(0, 94%, 86%);
+    color: red;
+    background-color: #ffffff;
 
     background-clip: padding-box;
-    border: 1px solid hsl(0, 94%, 86%);
+    border: 1px solid pink;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .general-container{
-    background-color: #ffffff;
+    background-color: bisque;
 }
 
 /* .form-group {
