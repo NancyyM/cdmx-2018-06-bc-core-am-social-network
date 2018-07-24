@@ -32,7 +32,7 @@ Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
 Invitar a crear un perfil, esa es la carta de presentación que tiene cada integrante. Lo más notorio de contar con un perfil  son los elementos visuales y textuales con las que un usuario se presenta a sí mismo: su nombre o alias, un avatar y descripciones. Pero la identidad virtual o digital está constituida también por los contenidos que comparte y las interacciones con otros usuarios diariamente. Todos estos elementos van construyendo una imagen del usuario que se moldea continuamente.
 
-![   ](imagenes/identidad.jpg);
+![identidad](/imagenes/identidad.jpg);
 
 **Vínculos y conectividad**
 
