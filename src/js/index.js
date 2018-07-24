@@ -24,6 +24,13 @@ validateEmail = (user1)=>{
 };
 
 
+//PARA INGRESAR CON FACEBOOK
+// const authFacebook = () => {
+//   var provider = new firebase.auth.FacebookAuthProvider();
+//   alert("loginfacebook");
+// }
+//TERMNANDO CON FACEBOOK
+
 //BOTÓN PARA INGRESAR CON GOOGLE
 btngoogle.addEventListener('click', e =>{
  entryGoogle();
@@ -89,7 +96,6 @@ btn.addEventListener('click', e =>{
 
  // PRUEBA PARA LA REFERENCIA DE HTML'S
 prueba.addEventListener('click', e =>{
-location.href="http://127.0.0.1:5500/src/prueba.html";
+location.href="http://127.0.0.1:5500/src/prueba.html"; //AQUI SE PUEDE CAMBIAR LA DIRECCION
  });
 //TERMINA PRUEBA PARA LA REFERENCIA DE HTML'S
-

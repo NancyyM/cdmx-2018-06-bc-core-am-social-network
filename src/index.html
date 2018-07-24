@@ -9,16 +9,19 @@
     <!-- <script src="https://appis.google.com/js/platform.js" async defer></script> -->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
     <title>Login</title>
     
 </head>
 
-<!-- Página principal donde se inica sesión.  -->
+<!-- Página principal donde se inicia sesión con el login  -->
 <body>
 
     <!-- Inicia logueo con facebook -->
     <script>
-            window.fbAsyncInit = function() {
+            //window.fbAsyncInit = function() {
               FB.init({
                 appId      : '286932778742726',
                 cookie     : true,
@@ -35,8 +38,11 @@ if (response.authResponse) {
  console.log('User cancelled login or did not fully authorize.');
 }
 });
-              FB.AppEvents.logPageView();
+                
+              FB.AppEvents.logPageView();   
+                
             };
+          
             (function(d, s, id){
                var js, fjs = d.getElementsByTagName(s)[0];
                if (d.getElementById(id)) {return;}
@@ -47,24 +53,46 @@ if (response.authResponse) {
           </script>
     <!-- Termina logueo con facebook -->
 
-    <div>  
-        <h2>Iniciar sesión.</h2>
-        <div class="logout">
-            <input type="text" id= "user1" placeholder="&#128272; Ingresa tu correo">
-            <input type="password" id="password1" placeholder="&#128272; Ingresa tu clave">
-            <input type="submit" id="login" value= "Iniciar sesión">
-            <input type="submit"  id = "checkIn" value="Registrarse">
-            <input type="submit" id = "google" value =  "Ingresar con Gmail">    
-            <p id= "emailCorrect" ></p>
-        </div>
+
+    <!-- TRABAJANDO CON BOOTSTRAP -->
+<section class="general-container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 mx-auto">
+          <div>
+            <img src="css/imagenes/bicicleta.jpg" class="mx-auto d-block img-fluid">
+          </div>
+          <p class="mt-4 text-red lead text-center">
+            Bienvenido a BikersWomen
+          </p>
+          <div class="form-group col s12">
+            <input type="email" class="form-control" id="user1" placeholder="&#128272; Email">
+          </div>
+          <div class="form-group col s12">
+            <input type="password" class="form-control" id="password1" placeholder="&#128272; Password">
+          </div>
+          <div class="col s12">
+            <button type="button" id="login" class="btn btn-outline-success col s12">Iniciar Sesión</button>
+          </div>
+          
+          <!-- <input type="submit"  id = "checkIn" value="Registrarse">
+          <input type="submit" id = "google" value =  "Ingresar con Gmail">     -->
+          <p id= "emailCorrect" ></p>
+      </div>
     </div>
+</section>
+
+<!-- TERMINANDO BOOTSTRAP -->
+
+<!-- INICIA BOTON PARA PRUEBA DE REFERENCIA HTML -->
+<!-- <div>
+  <input type = "submit" id = "prueba" value = "prueba">
+</div> -->
+<!-- TERMINA BOTON PARA PRUEBA DE REFERENCIA HTML -->
     
-    <!-- INICIA BOTON PARA PRUEBA DE REFERENCIA HTML -->
-    <div>
-        <input type = "submit" id = "prueba" value = "prueba">
-    </div>
-    <!-- TERMINA BOTON PARA PRUEBA DE REFERENCIA HTML -->
 
     <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 </body>
 </html>
+
+
