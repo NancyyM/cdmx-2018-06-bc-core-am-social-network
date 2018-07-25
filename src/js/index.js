@@ -58,22 +58,21 @@ autentificate = (provider) => {
 
 
 // REGISTRARSE.
-btnUser.addEventListener('click', e =>{
+// btnUser.addEventListener('click', e =>{
+//   const mail = usuario.value;
+//   const cl = clave.value;
+//   const auth = firebase.auth();
+//   const promise = auth.createUserWithEmailAndPassword(mail, cl);
+//   promise.catch(e => console.log(e.message));
+//   let prub = user1.value;
+//     if (validateEmail(prub)){
+//       mailCorrect.innerHTML = ('Tu correo es correcto');
+//     }
+//     else{
+//       mailCorrect.innerHTML =  ('Ingrese un correo valido por favor');
+//     }
 
-const mail = usuario.value;
-const cl = clave.value;
-const auth = firebase.auth();
-const promise = auth.createUserWithEmailAndPassword(mail, cl);
-promise.catch(e => console.log(e.message));
-let prub = user1.value;
-  if (validateEmail(prub)){
-    mailCorrect.innerHTML = ('Tu correo es correcto');
-  }
-  else{
-    mailCorrect.innerHTML =  ('Ingrese un correo valido por favor');
-  }
-
-});
+// });
 
 
 // INICIAR SESION.
@@ -82,20 +81,24 @@ btn.addEventListener('click', e =>{
   const cl1 = clave.value; 
   const auth = firebase.auth();
   const promise = auth.signInWithEmailAndPassword(mail1, cl1);
-  promise.catch(error => {
+  promise.then(function(){
+    location.href="../views/view1.html";
+  }).catch(error => {
   let prub = user1.value;
-  if (validateEmail(prub)){
-         mailCorrect.innerHTML = ('Tu correo es correcto');
-       }
-  else{
-    mailCorrect.innerHTML =  ('Ingrese un correo valido por favor');
-  } 
+  alert("email no reconocido");
+  // if (validateEmail(prub)){
+  //        alert('Tu correo es correcto');
+  //      }
+  // else{
+  //   alert('Ingrese un correo valido por favor');
+  // } 
 } );
 });
+
   
 
  // PRUEBA PARA LA REFERENCIA DE HTML'S
-prueba.addEventListener('click', e =>{
-location.href="http://127.0.0.1:5500/src/prueba.html"; //AQUI SE PUEDE CAMBIAR LA DIRECCION
- });
+// prueba.addEventListener('click', e =>{
+// location.href="http://127.0.0.1:5500/src/prueba.html"; //AQUI SE PUEDE CAMBIAR LA DIRECCION
+//  });
 //TERMINA PRUEBA PARA LA REFERENCIA DE HTML'S

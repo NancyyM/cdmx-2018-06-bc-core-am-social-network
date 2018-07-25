@@ -7,6 +7,7 @@
     storageBucket: "bucket.appspot.com"
   };
   firebase.initializeApp(config);
+  
   // Get a reference to the database service
   var database = firebase.database();
  
@@ -22,9 +23,26 @@
       let comentario = validComenter.value;
        comment.innerHTML = comentario
   });
+
+
+const btnCloseSesion = document.getElementById('close')
+  btnCloseSesion.addEventListener('click', e =>{
+    firebase.auth().signOut().then(function(){
+      location.href="../index.html";
+    }).catch(function(error){
+    });
+});
  
  
  //   edit.addEventListener('click', e =>{
  
  
  //   })
+
+//  firebase.auth().onAuthStateChanged(function(user){
+//   if(user){
+//     alert(user.displayName);
+//   }else{
+//     alert('NO session');
+//   }
+// });
