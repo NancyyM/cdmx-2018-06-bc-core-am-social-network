@@ -74,13 +74,16 @@ div.coments{
 } */
 
 .row .col.s12 {
-    margin-top: 1rem!important;
+    margin-top: 0.3rem!important;
     width: 100%;
     margin-left: auto;
     left: auto;
     right: auto;
 }
 
+.row .button.col.s12 {
+    margin-top: 0.3rem!important;
+}
 
 .nav-wrapper {
     position: relative;
@@ -106,10 +109,7 @@ a {
     text-align: center;
 }
 
-p{
-
-}
 
 .mt-4, .my-4 {
-    margin-top: 2rem!important;
+    margin-top: 1rem!important;
 }

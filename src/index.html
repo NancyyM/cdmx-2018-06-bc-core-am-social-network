@@ -10,6 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Login</title>
@@ -69,12 +70,20 @@ if (response.authResponse) {
           <div class="form-group col s12">
             <input type="password" class="form-control" id="password1" placeholder="&#128272; Password">
           </div>
-          <div class="col s12">
+          <div class="button col s12">
             <button type="button" id="login" class="btn btn-outline-success col s12">Iniciar Sesión</button>
           </div>
-          
-          <!-- <input type="submit"  id = "checkIn" value="Registrarse">
-          <input type="submit" id = "google" value =  "Ingresar con Gmail">     -->
+          <div>
+            <p class="mt-4 text-black lead text-center">
+              ¿Aun no tienes una cuenta?
+              <a href="views/formularioRegistro.html">Registrate aquí</a><br>
+              ó
+            </p>
+          </div>
+          <div>
+            <!-- <input type="submit"  id = "checkIn" value="Registrarse"> -->
+          </div>
+          <input type="submit" id = "google" value =  "Ingresar con Gmail">
           <p id= "emailCorrect" ></p>
       </div>
     </div>
