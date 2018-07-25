@@ -7,9 +7,13 @@
     storageBucket: "bucket.appspot.com"
   };
   firebase.initializeApp(config);
+<<<<<<< HEAD:src/js/app.js
   //para ingresar a guardar la data 
   var storage = firebase.storage();
 
+=======
+  
+>>>>>>> 99993891d77abd75fd2b1e772add5cdfd5a7c425:src/js/appView1.js
   // Get a reference to the database service
   var database = firebase.database();
  
@@ -30,6 +34,7 @@
   });
 
 
+<<<<<<< HEAD:src/js/app.js
 
 
 
@@ -61,6 +66,15 @@
 //   const comentPage = document.getElementById('comment')
 //   const perfil = document.getElementById('user1')
  
+=======
+const btnCloseSesion = document.getElementById('close')
+  btnCloseSesion.addEventListener('click', e =>{
+    firebase.auth().signOut().then(function(){
+      location.href="../index.html";
+    }).catch(function(error){
+    });
+});
+>>>>>>> 99993891d77abd75fd2b1e772add5cdfd5a7c425:src/js/appView1.js
  
 
 // const object = firebase.database().ref().child('user1')
@@ -85,4 +99,16 @@
 //  //   edit.addEventListener('click', e =>{
  
  
+<<<<<<< HEAD:src/js/app.js
 //  //   })
+=======
+ //   })
+
+//  firebase.auth().onAuthStateChanged(function(user){
+//   if(user){
+//     alert(user.displayName);
+//   }else{
+//     alert('NO session');
+//   }
+// });
+>>>>>>> 99993891d77abd75fd2b1e772add5cdfd5a7c425:src/js/appView1.js
