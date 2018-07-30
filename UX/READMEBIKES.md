@@ -32,20 +32,20 @@ Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
 Invitar a crear un perfil, esa es la carta de presentación que tiene cada integrante. Lo más notorio de contar con un perfil  son los elementos visuales y textuales con las que un usuario se presenta a sí mismo: su nombre o alias, un avatar y descripciones. Pero la identidad virtual o digital está constituida también por los contenidos que comparte y las interacciones con otros usuarios diariamente. Todos estos elementos van construyendo una imagen del usuario que se moldea continuamente.
 
-![identidad](/imagenes/identidad.jpg)
+![identidad](/imagenes/identidad.jpg);
 
 **Vínculos y conectividad**
 
 Las redes sociales se tratan de establecer lazos con otras personas, conexiones de diversa índole, que estos sitios ayudan a crear y mantener vivos. Los usuarios deben ser capaces de relacionarse y hacer crecer sus redes de contactos, de lo contrario no podríamos hablar de redes sociales. Junto a la construcción de un perfil, los sitios de redes sociales ofrecen también la posibilidad de crear listas de amigos, compartirla con otros y contactar con las redes de nuestros contactos.
 
-![vinculos](/imagenes/vinculos.jpg)
+![vinculos](/imagenes/vinculos.jpg);
 
 **Interacción**
 
 Esta es una de las principales características de las redes sociales. Es lo que mueve a las redes sociales, lo que mejor plasma su carácter social. Ya sea que se comparta un mismo interés en algún deporte, una misma institución, o lo que fuera, la gente está allí para comunicar y expresarse.
 Los perfiles y las listas de contactos son solo los pasos previos para ese fin último que es interactuar con otros. En los sitios de redes sociales esto se evidencia cuando se comparte actividades y contenidos.
 
-![interaccion](/imagenes/interaccion.jpg)
+![interaccion](/imagenes/interaccion.jpg);
 
 Otras características de las redes sociales que están presentes en mayor o menor medida son:
 
@@ -67,7 +67,7 @@ La bicicleta en México como modo de transporte o de ocio es usada desde hace d�
 
 Según datos del INEGI recabados en 2017 con la ‘Encuesta de Origen – Destino’, de las 15.62 millones de personas que transitan cotidianamente la zona metropolitana, solo el 2.2% usan la bicicleta de forma regular para realizar traslados, es decir, cerca 340 mil ciclistas activos de forma ordinaria. De dicha cantidad de personas, el 76% son hombres (aproximadamente 260 mil personas), mientras que el restante 24% son mujeres (80 mil ciclistas). Es decir, por cada mujer ciclista en nuestra ciudad, existen tres hombres que usan la bicicleta como modo de movilidad.
 
-![inegi](/imagenes/inegi.jpg)
+![inegi](/imagenes/inegi.jpg);
 
 Fuente: <http://www.beta.inegi.org.mx/proyectos/enchogares/especiales/eod/2017/>
 
