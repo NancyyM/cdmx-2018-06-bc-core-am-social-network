@@ -23,10 +23,9 @@ Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
  **Benchmark**
 
- Se realizo una busqueda en Google Play para saber si existian en el mercado de las redes sociales una app tematica sobre ciclistas urbanas en la Ciudad de Mexico, encontramos que hasta el momento solo existen app de ciclismo para trackear sus rutas y salud. Con esta información, determinamos que la red social tematica que crearemos seria la primera en su tipo ademas de innovar en el mercado existente.
+ Se realizo una busqueda en Google Play para saber si existen en el mercado de las redes sociales una app tematica dirigida solo a ciclistas urbanas de la Ciudad de Mexico, encontramos las más destacadas como Biko, Endomondo, Strava, Ecobici y Mobike. Al revisar las aplicaciones algunas estan dedicadas a promover el uso de la bici otorgando puntos (bikos) por cada kilómetro recorrido, renta de bicicletas, mostrar rutas,  decirte cuántas calorías quemaste por trayecto, guardar tus recorridos, las calorías que bajaste y información para mejorar la rutina y rendimiento. Con esta información, determinamos que aún no se cuenta con una red social tematica solo para mujeres ciclistas, seria la primera en su tipo ademas de innovar en el mercado existente.
 
-
- #### **Elementos básicos de la Red Social Temática**
+ #### **Elementos básicos a considerar de la Red Social Temática**
 
  **Identidad virtual**
 
@@ -97,6 +96,19 @@ Sentimientos que le generan al usuario:
 * Enfado
 * Tristeza
 
+### **3. Síntesis y definición**
+
+**Target, argumentación del proyecto (negocio y usuario):**
+
+Consideramos que con el uso de la  red social temática, las mujeres que utilizan la bicicleta como medio de transporte estarían generando una comunidad y redes de apoyo, antes, durante y después del trayecto. Se trataria de una red social de ciclistas para ciclistas. Aquí compartirian sus rutas seguras, dar avisos de los lugares peligrosos que hay en la ciudad, como calles oscuras, con baches o acompañamiento para llegar a sus destinos. También podran ubicar cuáles son los grupos ciclistas con los que puedes salir a rodar los fines de semana y hasta brindar consejos y recomendaciones del día a día de una ciclista urbana.
+
+Lo que los usuarias esperan obtener:
+
+* Redes de apoyo
+* Generar comunidad
+
+Ya contamos con información y acercamiento de las usuarias, ahora también es importante tener en cuenta los objetivos del negocio, en este caso los de la emprendedora.
+
 **Objetivos de la emprendedora:**
 
 Generar una comunidad muy estrecha alrededor de un tema en particular.
@@ -105,9 +117,14 @@ Generar una comunidad muy estrecha alrededor de un tema en particular.
 
 Apoyar una iniciativa para resolver una problemática que afecta a un grupo en especifico.
 
-### **3. Síntesis y definición**
+### **4. Ideación**
 
-Consideramos que con el uso de la  red social temática, las mujeres que utilizan la bicicleta como medio de transporte estarían generando una comunidad y redes de apoyo, antes, durante y después del trayecto.
+A continuacion se presentan historias de usuarias para comprender mejor lo que vamos a realizar, así como los beneficios al utilizarlas.
+
+* Nos ayudaran a representar requisitos del modelo de negocio que podemos    implementar rápidamente (días o semanas)
+* Nos serviran para mantener una relación cercana con el cliente
+* Nos van a permitir dividir los proyectos en pequeñas entregas
+* Nos van a permitir estimar fácilmente el esfuerzo de desarrollo
 
 **Historias de Usuarias**
 
@@ -128,3 +145,5 @@ Consideramos que con el uso de la  red social temática, las mujeres que utiliza
 * Yo, como usuaria logueada quiero poder darle like/estrellas a un posts para expresar mi apoyo a una publicación.
 * Yo, como usuaria logueada quiero poder ver los posts publicos de otros usuarios aunque no sean mis amigos.
 * Yo, como usuaria logueada quiero poder compartir posts de texto, imagen ó texto con imagen para comunicar mejor mis ideas.
+
+### **4. Prototipado**
