@@ -23,29 +23,28 @@ Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
  **Benchmark**
 
- Se realizo una busqueda en Google Play para saber si existian en el mercado de las redes sociales una app tematica sobre ciclistas urbanas en la Ciudad de Mexico, encontramos que hasta el momento solo existen app de ciclismo para trackear sus rutas y salud. Con esta información, determinamos que la red social tematica que crearemos seria la primera en su tipo ademas de innovar en el mercado existente.
+ Se realizo una busqueda en Google Play para saber si existen en el mercado de las redes sociales una app tematica dirigida solo a ciclistas urbanas de la Ciudad de Mexico, encontramos las más destacadas como Biko, Endomondo, Strava, Ecobici y Mobike. Al revisar las aplicaciones algunas estan dedicadas a promover el uso de la bici otorgando puntos (bikos) por cada kilómetro recorrido, renta de bicicletas, mostrar rutas,  decirte cuántas calorías quemaste por trayecto, guardar tus recorridos, las calorías que bajaste y información para mejorar la rutina y rendimiento. Con esta información, determinamos que aún no se cuenta con una red social tematica solo para mujeres ciclistas, seria la primera en su tipo ademas de innovar en el mercado existente.
 
-
- #### **Elementos básicos de la Red Social Temática**
+ #### **Elementos básicos a considerar de la Red Social Temática**
 
  **Identidad virtual**
 
 Invitar a crear un perfil, esa es la carta de presentación que tiene cada integrante. Lo más notorio de contar con un perfil  son los elementos visuales y textuales con las que un usuario se presenta a sí mismo: su nombre o alias, un avatar y descripciones. Pero la identidad virtual o digital está constituida también por los contenidos que comparte y las interacciones con otros usuarios diariamente. Todos estos elementos van construyendo una imagen del usuario que se moldea continuamente.
 
-![identidad](/imagenes/identidad.jpg);
+![identidad](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/identidad.jpg?raw=true)
 
 **Vínculos y conectividad**
 
 Las redes sociales se tratan de establecer lazos con otras personas, conexiones de diversa índole, que estos sitios ayudan a crear y mantener vivos. Los usuarios deben ser capaces de relacionarse y hacer crecer sus redes de contactos, de lo contrario no podríamos hablar de redes sociales. Junto a la construcción de un perfil, los sitios de redes sociales ofrecen también la posibilidad de crear listas de amigos, compartirla con otros y contactar con las redes de nuestros contactos.
 
-![vinculos](/imagenes/vinculos.jpg);
+![vinculos](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/vinculos.jpg?raw=true)
 
 **Interacción**
 
 Esta es una de las principales características de las redes sociales. Es lo que mueve a las redes sociales, lo que mejor plasma su carácter social. Ya sea que se comparta un mismo interés en algún deporte, una misma institución, o lo que fuera, la gente está allí para comunicar y expresarse.
 Los perfiles y las listas de contactos son solo los pasos previos para ese fin último que es interactuar con otros. En los sitios de redes sociales esto se evidencia cuando se comparte actividades y contenidos.
 
-![interaccion](/imagenes/interaccion.jpg);
+![interaccion](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/interaccion.jpg?raw=true)
 
 Otras características de las redes sociales que están presentes en mayor o menor medida son:
 
@@ -67,7 +66,7 @@ La bicicleta en México como modo de transporte o de ocio es usada desde hace d�
 
 Según datos del INEGI recabados en 2017 con la ‘Encuesta de Origen – Destino’, de las 15.62 millones de personas que transitan cotidianamente la zona metropolitana, solo el 2.2% usan la bicicleta de forma regular para realizar traslados, es decir, cerca 340 mil ciclistas activos de forma ordinaria. De dicha cantidad de personas, el 76% son hombres (aproximadamente 260 mil personas), mientras que el restante 24% son mujeres (80 mil ciclistas). Es decir, por cada mujer ciclista en nuestra ciudad, existen tres hombres que usan la bicicleta como modo de movilidad.
 
-![inegi](/imagenes/inegi.jpg);
+![inegi](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/inegi.jpg?raw=true)
 
 Fuente: <http://www.beta.inegi.org.mx/proyectos/enchogares/especiales/eod/2017/>
 
@@ -97,6 +96,19 @@ Sentimientos que le generan al usuario:
 * Enfado
 * Tristeza
 
+### **3. Síntesis y definición**
+
+**Target, argumentación del proyecto (negocio y usuario):**
+
+Consideramos que con el uso de la  red social temática, las mujeres que utilizan la bicicleta como medio de transporte estarían generando una comunidad y redes de apoyo, antes, durante y después del trayecto. Se trataria de una red social de ciclistas para ciclistas. Aquí compartirian sus rutas seguras, dar avisos de los lugares peligrosos que hay en la ciudad, como calles oscuras, con baches o acompañamiento para llegar a sus destinos. También podran ubicar cuáles son los grupos ciclistas con los que puedes salir a rodar los fines de semana y hasta brindar consejos y recomendaciones del día a día de una ciclista urbana.
+
+Lo que los usuarias esperan obtener:
+
+* Redes de apoyo
+* Generar comunidad
+
+Ya contamos con información y acercamiento de las usuarias, ahora también es importante tener en cuenta los objetivos del negocio, en este caso los de la emprendedora.
+
 **Objetivos de la emprendedora:**
 
 Generar una comunidad muy estrecha alrededor de un tema en particular.
@@ -105,9 +117,14 @@ Generar una comunidad muy estrecha alrededor de un tema en particular.
 
 Apoyar una iniciativa para resolver una problemática que afecta a un grupo en especifico.
 
-### **3. Síntesis y definición**
+### **4. Ideación**
 
-Consideramos que con el uso de la  red social temática, las mujeres que utilizan la bicicleta como medio de transporte estarían generando una comunidad y redes de apoyo, antes, durante y después del trayecto.
+A continuacion se presentan historias de usuarias para comprender mejor lo que vamos a realizar, así como los beneficios al utilizarlas.
+
+* Nos ayudaran a representar requisitos del modelo de negocio que podemos    implementar rápidamente (días o semanas)
+* Nos serviran para mantener una relación cercana con el cliente
+* Nos van a permitir dividir los proyectos en pequeñas entregas
+* Nos van a permitir estimar fácilmente el esfuerzo de desarrollo
 
 **Historias de Usuarias**
 
@@ -128,3 +145,5 @@ Consideramos que con el uso de la  red social temática, las mujeres que utiliza
 * Yo, como usuaria logueada quiero poder darle like/estrellas a un posts para expresar mi apoyo a una publicación.
 * Yo, como usuaria logueada quiero poder ver los posts publicos de otros usuarios aunque no sean mis amigos.
 * Yo, como usuaria logueada quiero poder compartir posts de texto, imagen ó texto con imagen para comunicar mejor mis ideas.
+
+### **4. Prototipado**
