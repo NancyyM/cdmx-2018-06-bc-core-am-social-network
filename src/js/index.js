@@ -82,7 +82,7 @@ btn.addEventListener('click', e =>{
   const auth = firebase.auth();
   const promise = auth.signInWithEmailAndPassword(mail1, cl1);
   promise.then(function(){
-    location.href="../views/view1.html";
+    location.href="../src/views/view1.html";
   }).catch(error => {
   let prub = user1.value;
   alert("email no reconocido");
