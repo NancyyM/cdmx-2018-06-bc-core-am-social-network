@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
-    <!-- <script src="https://appis.google.com/js/platform.js" async defer></script> -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script> -->
+
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -21,42 +18,7 @@
 
 <body>
 
-    <!-- Inicia logueo con facebook -->
-    <!-- <script>
-            window.fbAsyncInit = function() {
-              FB.init({
-                appId      : '286932778742726',
-                cookie     : true,
-                xfbml      : true,
-                version    : 'v3.0'
-              });
-              FB.login(function(response) {
-if (response.authResponse) {
- console.log('Welcome!  Fetching your information.... ');
- FB.api('/me', function(response) {
-   console.log('Good to see you, ' + response.name + '.');
- });
-} else {
- console.log('User cancelled login or did not fully authorize.');
-}
-});
-
-              FB.AppEvents.logPageView();
-
-            };
-
-            (function(d, s, id){
-               var js, fjs = d.getElementsByTagName(s)[0];
-               if (d.getElementById(id)) {return;}
-               js = d.createElement(s); js.id = id;
-               js.src = "https://connect.facebook.net/en_US/sdk.js";
-               fjs.parentNode.insertBefore(js, fjs);
-             }(document, 'script', 'facebook-jssdk'));
-          </script> -->
-    <!-- Termina logueo con facebook -->
-
-
-    <!-- TRABAJANDO CON BOOTSTRAP -->
+        <!-- TRABAJANDO CON BOOTSTRAP -->
 <section class="general-container">
     <div class="row">
       <div class="col-md-12 col-sm-12 mx-auto">
@@ -86,8 +48,10 @@ if (response.authResponse) {
             <button type="button" class="btn btn-primary btn-sm" id="btngoogle">Ingresa con Gmail</button>
             <p id= "emailCorrect" ></p>
           </div>
-      </div>
-    </div>
+          <div>
+          <button type="button" class="btn btn-primary btn-sm" id="btnfacebook">Ingresa con Facebook</button>
+            </div>
+
 </section>
 
 <!-- TERMINANDO BOOTSTRAP -->
@@ -100,6 +64,8 @@ if (response.authResponse) {
 
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 
 </body>
