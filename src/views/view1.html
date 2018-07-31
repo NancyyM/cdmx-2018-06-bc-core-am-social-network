@@ -5,6 +5,7 @@
     <title>CRUD TASK</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+  
   <body>
     <div class="container">
       <div clas="row">
@@ -15,9 +16,8 @@
         <input id="new-task" type="text">
         <button>Add</button>
       </p>
-
-      <h3>COMENTARIOS:</h3>
-      <ul id="incomplete-tasks">
+      <h2>COMENTARIOS:</h2>
+      <div id="incomplete-tasks">
         <!-- <li>
           <input type="checkbox">
           <label>Quidditch Practice</label>
@@ -33,21 +33,21 @@
           <button class="delete">Delete &#x1F5D1;</button>
         </li> -->
 
-      </ul>
+      </div>
 
       <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
+      <div id="completed-tasks">
+        <div>
           <input type="checkbox" checked>
           <label>Coments</label>
           <input type="text">
           <button class="edit">Edit</button>
           <button class="delete">Delete</button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div>
-        <button id="close">Cerrar Sesion</button>
+      <button id="close">Cerrar Sesion</button>
     </div>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="../js/credential.js"></script>

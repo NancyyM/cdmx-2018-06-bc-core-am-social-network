@@ -12,7 +12,7 @@ const init = () => {
 }
 
 const createNewTaskElement = (taskString) => {
-  const listItem = document.createElement('li');
+  const listItem = document.createElement('p'); //creamos un nuevo elemento cada que se ingrese un nuevo comentario
   const label = document.createElement('label');
   const editButton = document.createElement('button');
   const deleteButton = document.createElement('button');
