@@ -1,125 +1,64 @@
-/* Estilo de Login */
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
 body{
-   /* background-color: rgb(250, 253, 49); */
-   display: flex;
-   min-height: 100vh;
-   }
-
-/* input{
-    max-width: 100%;
-    min-width: 100% ;
-    padding: 10px;
-    margin: 10px;
-    display: block;
-    font-size: 20px;
-    
-} */
-
-/* Estilo de caja de comentarios */
-div.coments{
-    padding: 0;
-    margin: 0;
-    width: 50%;
-    max-width: 500px;
-    border: 10px solid green;
-    text-align: center;
+    background-color: rgb(255, 253, 123)!important;
 }
 
-/* ESTILOS PARA BOOTSTRAP DE NANCY */
-
-.background-image{
-    background-image: url('imagen/imagen2.jpg');
-    background-size: cover;
-    background-position: center center;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    margin: 0;
-    position: absolute;
+element.style {
 }
-
-/* .form-group {
-    background-color: aquamarine
-} */
-
-.form-control {
+.text-muted {
+    color: #6c757d!important;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+p {
     display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.text-center {
+    text-align: center!important;
+}
+body {
+    margin: 0;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem; */
+    font-weight: 400;
     line-height: 1.5;
-    color: red;
-    background-color: #ffffff;
-
-    background-clip: padding-box;
-    border: 1px solid pink;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.general-container{
-    background-color: bisque;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
-/* .form-group {
-    background-color: aquamarine;
-} */
-
-.row .col.s12 {
-    margin-top: 0.3rem!important;
-    width: 100%;
-    margin-left: auto;
-    left: auto;
-    right: auto;
+.iconos {
+    
+    border-radius: 30px;
+    background-color: white;
+    border-color: white;
 }
 
-.row .button.col.s12 {
-    margin-top: 0.3rem!important;
-}
-
-.nav-wrapper {
-    position: relative;
-    height: 100%
-
-    background-color: bisque;
-}
-
-nav {
-    background-color: bisque;
-}
-
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-    text-align: center;
-    text-align-last: center;
-}
-
-.center, .center-align {
-    text-align: center;
-}
-
-
-.mt-4, .my-4 {
-    margin-top: 1rem!important;
-}
-
-a{
-    font-size: 1.3rem;
-    color: #009900;
+h1.h3.mb-3.font-weight-normal {
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+    color: brown;
 }
 
 
 
-<div style="height: 40px; padding-top: 10px; padding-bottom: 4px; text-align: left;"><div class="fb-login-button fb_iframe_widget" data-scope="public_profile,email,user_likes,user_birthday,user_friends" onlogin="checkLoginState" data-button-type="continue_with" data-use-continue-as="true" data-width="268px" data-size="large" login_text="" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=274266067164&amp;button_type=continue_with&amp;container_width=268&amp;locale=es_LA&amp;scope=public_profile%2Cemail%2Cuser_likes%2Cuser_birthday%2Cuser_friends&amp;sdk=joey&amp;size=large&amp;use_continue_as=true&amp;width=268px"><span style="vertical-align: bottom; width: 268px; height: 40px;"><iframe name="f35e1779ecec004" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:login_button Facebook Social Plugin" src="https://www.facebook.com/v2.2/plugins/login_button.php?app_id=274266067164&amp;button_type=continue_with&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FbSTT5dUx9MY.js%3Fversion%3D42%23cb%3Df225918b7fecd4c%26domain%3Dwww.pinterest.com.mx%26origin%3Dhttps%253A%252F%252Fwww.pinterest.com.mx%252Ff314fc6a573b78%26relation%3Dparent.parent&amp;container_width=268&amp;locale=es_LA&amp;scope=public_profile%2Cemail%2Cuser_likes%2Cuser_birthday%2Cuser_friends&amp;sdk=joey&amp;size=large&amp;use_continue_as=true&amp;width=268px" style="border: none; visibility: visible; width: 268px; height: 40px;" class=""></iframe></span></div></div>
+
+
+/* FORMULARIO */
