@@ -147,3 +147,11 @@ A continuacion se presentan historias de usuarias para comprender mejor lo que v
 * Yo, como usuaria logueada quiero poder compartir posts de texto, imagen ó texto con imagen para comunicar mejor mis ideas.
 
 ### **4. Prototipado**
+
+![sketch](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/sketch%20login.jpg?raw=true)
+
+![Sketch](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/Sketch%20muro.jpg?raw=true)
+
+![Login](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/Login.png?raw=true)
+
+![Muro](https://github.com/NancyyM/cdmx-2018-06-bc-core-am-social-network/blob/master/UX/Imagenes/Muro.png?raw=true)
