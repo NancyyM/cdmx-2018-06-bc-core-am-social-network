@@ -1,33 +1,28 @@
-// Initialize Firebase
+  const usName = document.getElementById('name');
+  const usEmail = document.getElementById('email');
+  const usPassword = document.getElementById('password');
+  const btnCreateAccount = document.getElementById('create');
 
-var config = {
-    apiKey: "AIzaSyCihx2_wwaHazrySwOO0LLmdBCWtfZgoek",
-    authDomain: "login-35451.firebaseapp.com",
-    databaseURL: "https://login-35451.firebaseio.com",
-    projectId: "login-35451",
-    storageBucket: "login-35451.appspot.com",
-    messagingSenderId: "276377229885"
-  };
-  firebase.initializeApp(config);
   
-  const usuario = document.getElementById('user');
-  const clave = document.getElementById('password');
-  const btn = document.getElementById('cuenta');
+  btnCreateAccount.addEventListener('click', e => {
+    const userName = usName.value;
+    const userEmail = usEmail.value;
+    const userPassword = usPassword.value; 
+    // console.log(cl);
+    // console.log(userEmail);
+    const auth = firebase.auth();
   
-  // console.log(usuario);
-  
-  btn.addEventListener('click', e =>{
-  const email = usuario.value;
-  // console.log(email);
-  const cl = clave.value;
-  // console.log(cl);
-  const auth = firebase.auth();
-  
-  const promise = auth.createUserWithEmailAndPassword(email, cl);
-  promise.then(function(){
-    location.href="../views/view1.html";
-  }).catch(e => alert(e.message));
-  
+    const promise = auth.createUserWithEmailAndPassword(userEmail, userPassword);
+
+    promise.then(function(){
+      user = firebase.auth().currentUser;
+      user.sendEmailVerification();
+    }).then(function () {
+      user.updateProfile({
+        displayName: userName //aqui va el nombre del usuario
+        //photoURL: photoURL
+      });
+      //console.log(user);
+      location.href="../views/view1.html";
+    }).catch(e => alert(e.message));
   });
-  
-  //logue con Facebook

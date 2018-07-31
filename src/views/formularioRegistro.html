@@ -12,53 +12,15 @@
     
 </head>
 <body>
-        <!-- <script>
-                window.fbAsyncInit = function() {
-                  FB.init({
-                    appId      : '243544883127641',
-                    cookie     : true,
-                    xfbml      : true,
-                    version    : 'v3.0'
-                  });
-                  FB.login(function(response) {
-    if (response.authResponse) {
-     console.log('Welcome!  Fetching your information.... ');
-     FB.api('/me', function(response) {
-       console.log('Good to see you, ' + response.name + '.');
-     });
-    } else {
-     console.log('User cancelled login or did not fully authorize.');
-    }
-});
-                    
-                  FB.AppEvents.logPageView();   
-                    
-                };
-              
-                (function(d, s, id){
-                   var js, fjs = d.getElementsByTagName(s)[0];
-                   if (d.getElementById(id)) {return;}
-                   js = d.createElement(s); js.id = id;
-                   js.src = "https://connect.facebook.net/en_US/sdk.js";
-                   fjs.parentNode.insertBefore(js, fjs);
-                 }(document, 'script', 'facebook-jssdk'));
-              </script> -->
-        
-    
-    <!-- <form action="" method="get">
-<input type="text" id= "user" placeholder="&#128272; Ingresa tu usuario">
-<input type="password" id="clave" placeholder="&#128272; Ingresa tu clave">
  
-<input type="submit" value= "ingresar">
-</form> -->
 <div>
-        <input type="text"name placeholder="Ingresa tu nombre">
-        <input type="text" id= "user" placeholder="&#128272; Crea tu usuario">
+        <input type="text" id= "name" placeholder="Ingresa tu nombre"> //ALEX aqui crear
+        <input type="text" id= "email" placeholder="&#128272; Crea tu email de usuario">
         <input type="password" id="password" placeholder="&#128272; Crea tu clave">
-        <input type="submit" id="cuenta" value= "Crear cuenta">
+        <input type="submit" id="create" value= "Crear cuenta"> 
 </div>
+<script src="../js/credential.js"></script>
 <script type="text/javascript" src="../js/formularioRegistro.js"></script>
-
     
 </body>
 </html>
