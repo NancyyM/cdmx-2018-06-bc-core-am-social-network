@@ -8,16 +8,43 @@
 
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Pacifico" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    
 
     <title>Social Network</title>
 
 </head>
-<body>
-
-  <section class="general-container">
+<body class="text-center">
+  <form class="form-signin">
+    <!-- <img class="mb-4" src="...img/img.svg" alt width="72" height="72"> -->
+    <h1 class="h3 mb-3 font-weight-normal">SororiBikes</h1>
+    <!-- <label for="inputEmail" class"sr-only">Email adress</label> -->
+    <input type="email" id="userRegistered" class="form-control" placeholder="&#128231; Email" required autofocus><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="passwordRegistered" class="form-control" placeholder="&#128272; Password" required><br>
+    <button type="button" id="login" class="btn btn-outline-success col s12">Iniciar Sesión</button>
+    <div>
+      <p class="mt-4 text-black lead">
+        ¿Aun no tienes una cuenta?<br>
+          <a href="views/formularioRegistro.html">Registrate aquí</a><br>
+          ó ingresa con
+        </p>
+      </div>
+      <div class="button col s12">
+        <!-- <button type="button" class="btn btn-primary btn-sm" id="btngoogle">Gmail</button> -->
+        <button type="button" class="iconos" id="btngoogle"><i class="fab fa-google"></i></button>
+        <!-- <button type="button" class="btn btn-primary btn-sm" id="btnfacebook">Facebook</button><br><br> -->
+        <button type="button" class="iconos" id="btnfacebook"><i class="fab fa-facebook-f"></i></button>
+      </div>
+      <div>
+      
+        </div>
+    <p class="mt-5 mb-3 text-muted">© sororiGirls</p>
+  </form>
+  <!-- <section class="general-container">
     <div class="row">
       <div class="col-md-12 col-sm-12 mx-auto">
           <div>
@@ -49,7 +76,7 @@
           <button type="button" class="btn btn-primary btn-sm" id="btnfacebook">Ingresa con Facebook</button>
             </div>
 
-  </section>
+  </section> -->
 
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
