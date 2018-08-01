@@ -9,7 +9,7 @@ Si se quisiera clasificar a las redes sociales, podría hacerse según su origen
 
 * Redes genéricas: Son muy numerosas y populares (como Facebook  o Twitter).
 * Redes profesionales: Como LinkedIn, que involucran individuos que comparten el ámbito laboral o que buscan ampliar sus  fronteras  laborales y pueden ser abiertas o cerradas.
-* Redes temáticas: Relacionan personas con intereses específicos en común, como música, hobbies, deportes, etc.,
+* Redes temáticas: Relacionan personas con intereses específicos en común, como música, hobbies, deportes, etc,.
 
 Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
@@ -23,7 +23,7 @@ Fuente: <https://concepto.de/redes-sociales/#ixzz5Lk4K6ImK>
 
  **Benchmark**
 
- Se realizo una busqueda en Google Play para saber si existen en el mercado de las redes sociales una app tematica dirigida solo a ciclistas urbanas de la Ciudad de Mexico, encontramos las más destacadas como Biko, Endomondo, Strava, Ecobici y Mobike. Al revisar las aplicaciones algunas estan dedicadas a promover el uso de la bici otorgando puntos (bikos) por cada kilómetro recorrido, renta de bicicletas, mostrar rutas,  decirte cuántas calorías quemaste por trayecto, guardar tus recorridos, las calorías que bajaste y información para mejorar la rutina y rendimiento. Con esta información, determinamos que aún no se cuenta con una red social tematica solo para mujeres ciclistas, seria la primera en su tipo ademas de innovar en el mercado existente.
+ Se realizo una busqueda en Google Play para saber si existen en el mercado de las redes sociales una app tematica dirigida solo a ciclistas urbanas de la Ciudad de Mexico, encontramos las más destacadas como Biko, Endomondo, Strava, Ecobici y Mobike. Al revisar las aplicaciones algunas estan dedicadas a promover el uso de la bici otorgando puntos (bikos) por cada kilómetro recorrido, renta de bicicletas, mostrar rutas,  decirte cuántas calorías quemaste por trayecto, guardar tus recorridos, las calorías que bajaste e información para mejorar la rutina y rendimiento. Con esta información, determinamos que aún no se cuenta con una red social temática solo para mujeres ciclistas, seria la primera en su tipo ademas de innovar en el mercado existente.
 
  #### **Elementos básicos a considerar de la Red Social Temática**
 
@@ -70,9 +70,13 @@ Según datos del INEGI recabados en 2017 con la ‘Encuesta de Origen – Destin
 
 Fuente: <http://www.beta.inegi.org.mx/proyectos/enchogares/especiales/eod/2017/>
 
-Retomando las cifras anteriores nos indican que  solo el 24%  de mujeres utilizan la bicicleta como medio de transporte, (80 mil ciclistas) comparado con el  76% de hombres, (aproximadamente 260 mil). Por este motivo,  al ver que existe una minoría de mujeres, se realizará una investigación  para conocer su contexto como ciclistas con el fin de entender  las necesidades o problemas que les surgen día a día al utilizar la bicicleta como medio de transporte y poder ofrecerles soluciones a través de una red social temática.
+Lo cierto es que las mujeres tienen necesidades de movilidad distintas a los hombres. Un estudio del GIZ, la agencia de desarrollo alemana, define que las mujeres tienen “trayectos numerosos y complejos” y “rutas variadas”. Suelen hacer viajes “acompañadas por hijos”, “cargadas con bultos, compras o carritos para bebés”. Además, estos están caracterizados por una “alta percepción de la inseguridad”. En cambio, los viajes de los hombres se caracterizan por tener “trayectos escasos, simples y repetitivos”. “Rara vez llevan carga consigo”, dice el documento, y tienen una “baja percepción de la inseguridad”
 
-Al conocer las necesidades o problemáticas que les surgen a éstas ciclistas urbanas, podemos atraer a mujeres que solo utilizan la bicicleta con fines recreativos y mostrales ésta alternativa como un  medio de transporte cotidiano y eficaz. Recordando la información del INEGI “Por cada mujer ciclista en nuestra ciudad, existen tres hombres que usan la bicicleta como modo de movilidad”, consideramos que con la red social temática podemos aumentar el número de ciclistas urbanas.
+Retomando las cifras anteriores nos indican que  solo el 24%  de mujeres utilizan la bicicleta como medio de transporte, (80 mil ciclistas) comparado con el  76% de hombres, (aproximadamente 260 mil). Por este motivo,  al ver que existe una minoría de mujeres, se realizó una investigación  para conocer su contexto como ciclistas con el fin de entender  las necesidades o problemas que les surgen día a día al utilizar la bicicleta como medio de transporte y poder ofrecerles soluciones a través de una red social temática.
+
+Al conocer las necesidades o problemáticas que les surgen a éstas ciclistas urbanas, podemos atraer a mujeres que solo utilizan la bicicleta con fines recreativos y mostrarles ésta alternativa como un  medio de transporte cotidiano y eficaz. Recordando la información del INEGI “Por cada mujer ciclista en nuestra ciudad, existen tres hombres que usan la bicicleta como modo de movilidad”, consideramos que con la red social temática podemos aumentar el número de ciclistas urbanas.
+
+
 
 ### **2. Investigación**
 
@@ -80,14 +84,29 @@ Para poder conocer el contexto de las ciclistas urbanas se  realizó un cuestion
 
 Al contar con un acercamiento con las mujeres que utilizan la bicicleta como medio de transporte, encontramos que usarla las hace sentir independientes, libres, autónomas, felices y su impacto las ha ayudado a descubrirse a sí mismas, evitar estrés, apoyo en su economia, ademas de mantenerse saludablemente. La mayoría de la  mujeres utilizan la bicicleta todos los días e indican que realizan sus traslados solas. Con la información que se obtuvo se identificaron los siguientes puntos de dolor:
 
-* Agresion vehicular
-* Acoso Sexual
-* Darse cuenta que no llevan el equipo, herramientas o repuestos necesarios
-* Pasar solas por lugares obscuros, vialidades
-* No conocer los sitios a donde se dirigen
-* Inseguridad en las rutas que utilizan
-* No saben de algun sitio seguro donde puedan encadenar o dejar la bicicleta
-* Caidas
+**Agresion Vehicular**
+Segun estádisticas de la Secretaría de Salud el número de ciclistas fallecidos aumento en un 5%.
+Esto sucede a pesar de que hay zonas habilitadas para el tránsito de las ciclistas, lo cual es principalmente debido a la falta de cultura que existe en México.
+De acuerdo con una encuesta de la casa De las Heras Demotecnia, seis de cada diez mexicanos cree que los accidentes se deben a la distracción tanto de automovilistas como de ciclistas, mientras que 34% piensa que es por la falta de precaución de los conductores y sólo 5% cree que es por falta de precaución de los ciclistas.
+Esta encuentas también nos arroja que 64% de los capitalinos se trasladan en trasnporte público, el 17% se traslada en vehiculos particulares,y 5% se traslada en bicicleta, adicional a ello se determinó que el 34% porciento de la población ha contemplado el usar la bicicleta como medio de trasnporte, sin embargo se detienen debido a la inseguridad y la falta de vias para este método de transporte, mientras que el 22% argumenta que su destino queda muy lejos, el 15% indicó que no sabe andar en bicicleta, 10% mencionan que n o tienen bicicletas y finalmente el 5% que opina que es cansado. 
+El documento de la casa encuestadora también informó que 50% de los ciclistas de la Ciudad de México, ha estado involucrado en algún accidente vial.
+Sobre qué tan seguras son las calles de la CDMX para los ciclistas y peatones, 77% dijo que no son nada seguras, frente al 20% que dijo que son algo seguras. Sólo  2% considera que son muy seguras.
+
+**Acoso Sexual**
+En la actualidad la mujer vive acoso en todos los ambitos de su vida, lo más alarmante de esta situación es que debido a que sucede constantemente y a pesar de reconocer que es un delito grave, la mujer ya sea por desconfianza a las autoridades, por no tener tiempo o  porque desconocen a donde acudir no denuncian estas situaciones. Las medidas que generalmente usan para protegerse de estas situaciones son por ejemplo; tomar otras rutas, usar modos de transporte más seguros, buscan ser acompañadas o se defienden por si mismas.
+Como consecuencia del acoso, la mujer comienza a presentar transtornos como la ansiedad, estres, ansiedad, nerviosismo, impotencia y desesperación por mencionar algunos.
+Fuentes: <http://cedoc.inmujeres.gob.mx/documentos_download/protocolo_coah.pdf>
+        <http://epadeq.com.mx/wp-content/uploads/2014/05/ViolenciaSexualSTP_GDF.pdf>
+
+**Seguridad**
+En el día a día de una mujer se enfrenta con problemas graves como es el de la inseguridad. Con respecto a este hambito la ENPIVE (Encuesta Nacional de Victimización y Percepción sobre Seguridad Pública) realizada por el INEGI entre el año 2016 y 2017 nos indica que un 76.9% de las mujeres consideran que la Ciudad de México es insegura, esto no los reafirma un estudio realizado por la Secretaria de Movilidad (SEMOVI),la cual nos plantea que los servicios de transpote público tales como el Metro, Tren Ligero, RTP y Trolebús es donde se ha incrementado más el robo con o sin violencia, basados en el perdiodo antes mencionado nos muestra que el robo sin violencia en el trasnporte público incremento en 127% en la Ciudad  de México.
+Fuente :<http://www.inegi.org.mx/saladeprensa/boletines/2017/envipe/envipe2017_09.pdf>
+        <https://www.elsoldemexico.com.mx/metropoli/cdmx/asaltos-al-transporte-publico-una-realidad-de-la-vida-diaria-686186.html>
+**Ignorancia de rutas seguras**
+La mayoria de las ciclistas que existen hoy en día, en algun momento dudaron de usar una bicicleta como medio de trasnporte, esto es debido justamente a la inseguridad, ya que cuando inciaron no sabian cuales rutas son las más viables para trasladarse evitando lo más posible conflictos que se pudieran dar durante su trayecto, esto es debido a que no todas las rutas usadas por ciclistas son 100% seguras.
+
+**Encadenamiento de bicicletas**
+Idealmente las bicicletas deberían ser encadenada a un ciclopuerto. Sin embargo en nuestra ciudad este tipo de infraestructura aun es escasa, por lo que tendremos que buscar alguna estructura que haga el trabajo.
 
 Sentimientos que le generan al usuario:
 
@@ -96,6 +115,16 @@ Sentimientos que le generan al usuario:
 * Enfado
 * Tristeza
 
+
+**Salud**
+La Bicicleta es una medicina sobre dos ruedas.
+Está clínicamente comprobado que es una de las actividades más completas y universales para prevenir dolores de espalda, proteger articulaciones y mejorar el sistema circulatorio e inmunológico.
+El uso de la bicicleta promueve el bienestar de las mujeres, ya que es un ejercicio saludable, el cual nos ayuda a prevenir enfermedades cardiovasculares también previene la diabetes y obesidad.  Nos ayuda a promover lazos con la familia y la comunidad. Cabe destacar que es el medio de trasnporte más económico, ocupa menor espacio que un automovil y finalmente ayuda a ahorra dinero en la infraestructura de la Ciudad de México. 
+Practicar el ciclismo regularmente repercute de manera positiva en el sistema inmunológico. El cuerpo de los ciclistas desprende compuestos químicos que mejoran el estado de ánimo y hacen que se produzca una situación de bienestar. Los fagocitos, las células devoradoras de bacterias del cuerpo humano, son movilizadas de manera inmediata a través del pedaleo, para aniquilar bacterias y células cancerígenas.
+
+Sólo 10 minutos de pedaleo ya repercuten en la musculatura, el riego sanguíneo y las articulaciones. A partir de 30 minutos aparecen influencias positivas en las funciones del corazón, y a partir de 50 minutos es estimulado el metabolismo graso. Los ciclistas habituales pueden intensificar notablemente esos resultados si practican este deporte con constancia durante su tiempo libre.
+
+De esta manera una mujer de entre 45 y 60 años puede aumentar tres veces los beneficios en su sistema inmunológico, si en lugar de 20 minutos, monta en bicicleta 60 minutos al día. El ciclismo aporta beneficios increíbles para la salud en muy poco tiempo; este fenómeno debería facilitarnos la decisión de desempolvar nuestra antigua bicicleta.
 ### **3. Síntesis y definición**
 
 **Target, argumentación del proyecto (negocio y usuario):**

@@ -5,6 +5,7 @@ const completedTaskList = document.getElementById('completed-tasks');
 
 let refTask;
 
+
 const init = () => {
   addButton.addEventListener('click', sendTaskFirebase);
     refTask = firebase.database().ref().child('comentario');
@@ -152,4 +153,12 @@ firebase.auth().onAuthStateChanged(function (user) {
   document.getElementById('user-name').innerHTML =user.displayName;
   //alert(user.displayName);
 });
+
+let btnlike = document.getElementById('like');
+
+btnlike.addEventListener ("click", event =>{
+console.log("hola");
+
+});
+
 window.onload = init
