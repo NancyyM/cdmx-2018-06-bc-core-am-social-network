@@ -1,4 +1,4 @@
-  const usName = document.getElementById('name');
+const usName = document.getElementById('name');
   const usEmail = document.getElementById('email');
   const usPassword = document.getElementById('password');
   const btnCreateAccount = document.getElementById('create');
