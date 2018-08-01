@@ -1,25 +1,45 @@
-const taskInput = document.getElementById('new-task');
-const addButton = document.getElementsByTagName('Button')[1];
-const inCompletedTaskList = document.getElementById('incomplete-tasks');
-const completedTaskList = document.getElementById('completed-tasks');
+const commentInput = document.getElementById('new-task');
+const addButton = document.getElementsByTagName('Button')[1]; //boton en la posición 1
+const comentList = document.getElementById('completed-tasks');
 
-let refTask;
+let ref; //variable global
 
+firebase.auth().onAuthStateChanged(function (user) {
+  //console.log(user);
+  //se agrega el nombre del usuario en la etiqueta con el id user-name que es un label
+  document.getElementById('user-name').innerHTML =user.displayName;
+  //alert(user.displayName);
+});
+
+//inicia las funciones principales y añade funcion sendCommentFirebase al boton de add publicacion
 const init = () => {
-  addButton.addEventListener('click', sendTaskFirebase);
-    refTask = firebase.database().ref().child('comentario');
-  getTaskOfFirebase();
+  addButton.addEventListener('click', sendCommentFirebase);
+    ref = firebase.database().ref().child('comentario');
+  getCommentOfFirebase();
 }
 
-const addTask = (key, taskCollection) => {
-  const listItem = createNewTaskElement(key,taskCollection);
+//la encargada de mandar a llamar la funcion addComment para crear los elementos
+const getCommentOfFirebase = () => {
+  ref.on('value', (snapshot) => {
+    //console.log(snapshot.val());
+    comentList.innerHTML = '';
+    const data = snapshot.val()
+    for (var key in data) {
+      addComment(key, data[key])
+    }
+  })
+}
+
+//añade los elementos de la publicacion (label, botones) al id completed-tasks del html
+const addComment = (key, commentCollection) => {
+  const listItem = createNewCommentElement(key, commentCollection);
   listItem.setAttribute('data-keytask', key);
-    completedTaskList.appendChild(listItem);
-
-
-  bindTaskEvents(listItem, taskCompleted)
+    comentList.appendChild(listItem);
+  bindCommentsEvents(listItem)
 }
-const createNewTaskElement = (key,taskString) => {
+
+//crea los elementos de la publicacion, label, botones etc..
+const createNewCommentElement = (key,taskString) => {
   
   const listItem = document.createElement('p'); //creamos un nuevo elemento cada que se ingrese un nuevo comentario
   const label = document.createElement('label');
@@ -27,8 +47,6 @@ const createNewTaskElement = (key,taskString) => {
   const deleteButton = document.createElement('button');
 
   const totalLikes = document.createElement('div');
-
-  //const likeButton = document.createElement('button');
   totalLikes.innerHTML = "Total de likes "+taskString.like;
 
   editButton.innerHTML = 'Edit &#9998;';
@@ -42,7 +60,7 @@ const createNewTaskElement = (key,taskString) => {
   btn.setAttribute('type', 'button'); // input element of type button
   btn.setAttribute('value', 'Like');
   let user = firebase.auth().currentUser;
-  console.log(taskString);
+  //console.log(taskString);
   let inArray = taskString.likeUser.indexOf(user.uid);
 
   if(inArray>0){
@@ -62,46 +80,24 @@ const createNewTaskElement = (key,taskString) => {
   return listItem;
 }
 
-const taskCompleted = () => {
-  const listItem = event.target.parentNode;
-  const keyListItem = event.target.parentNode.dataset.keytask;
-  const refTaskToCompleted = refTask.child(keyListItem);
-  refTaskToCompleted.once('value', (snapshot) => {
-    const data = snapshot.val();
-    console.log(event.target.checked);
-    if (event.target.checked) {
-      completedTaskList.appendChild(listItem);
-      refTaskToCompleted.update({
-        status: 'completed'
-      })
-    } else {
-      inCompletedTaskList.appendChild(listItem);
-
-      refTaskToCompleted.update({
-        status: 'incompleted'
-      })
-    }
-  })
-
-
-}
-
-const bindTaskEvents = (taskListItem, checkboxEventHandle) => {
-  const editButton = taskListItem.querySelector('button.edit');
-  const deleteButton = taskListItem.querySelector('button.delete');
+//agrega los botones de elimiar y editar una publicacion
+const bindCommentsEvents = (commentListItem) => {
+  const editButton = commentListItem.querySelector('button.edit');
+  const deleteButton = commentListItem.querySelector('button.delete');
   if(editButton){
-    editButton.addEventListener('click', editTask);
-    deleteButton.addEventListener('click', deleteTask);
+    editButton.addEventListener('click', editComment);
+    deleteButton.addEventListener('click', deleteComment);
   }
 }
 
-const editTask = () => {
+//Edita comentario
+const editComment = () => {
   const listItem = event.target.parentNode;
   const keyListItem = event.target.parentNode.dataset.keytask;
   const label  = listItem.querySelector('label');
   const editButton = event.target;
   const containsClass = listItem.classList.contains('editMode');
-  const refTaskToEdit = refTask.child(keyListItem);
+  const refTaskToEdit = ref.child(keyListItem);
   refTaskToEdit.once('value', (snapshot) => {
     const data = snapshot.val();
 
@@ -125,44 +121,35 @@ const editTask = () => {
 
 }
 
-const deleteTask = () => {
+//elimina comentario
+const deleteComment = () => {
   let confirmation = confirm('EStas seguro de borrar la publicación');
   if(confirmation){
     const keyListItem = event.target.parentNode.dataset.keytask;
-    const refTaskToDelete = refTask.child(keyListItem);
+    const refTaskToDelete = ref.child(keyListItem);
     refTaskToDelete.remove();
   }
 }
 
-const getTaskOfFirebase = () => {
-  refTask.on('value', (snapshot) => {
-    console.log(snapshot.val());
-    inCompletedTaskList.innerHTML = '';
-    completedTaskList.innerHTML = '';
-    const data = snapshot.val()
-    for (var key in data) {
-      addTask(key, data[key])
-    }
-  })
-}
-
-const sendTaskFirebase = () => {
+//agrega comentario
+const sendCommentFirebase = () => {
   var user = firebase.auth().currentUser;
   ///console.log(user.uid);
-  if(taskInput.value.trim() != ''){ //funcion nativa de JS que elimina los espacios de una cadena
+  if(commentInput.value.trim() != ''){ //funcion nativa de JS que elimina los espacios de una cadena
     let arrayUser = {0:1};
-    refTask.push({
-      contenidoTask : taskInput.value,
+    ref.push({
+      contenidoTask : commentInput.value,
       userId : user.uid,
       like:0,
       likeUser :arrayUser
     });
-    taskInput.value = '';
+    commentInput.value = '';
   }else{
     alert('No puedes realizar una publicación en blanco.')
   }
 }
 
+//detecta cuando se da clic en el boton de cerrar sesion
 const btnCloseSesion = document.getElementById('close')
   btnCloseSesion.addEventListener('click', e =>{
     firebase.auth().signOut().then(function(){
@@ -171,16 +158,10 @@ const btnCloseSesion = document.getElementById('close')
     });
 });
 
-firebase.auth().onAuthStateChanged(function (user) {
-  //console.log(user);
-  //se agrega el nombre del usuario en la etiqueta con el id user-name que es un label
-  document.getElementById('user-name').innerHTML =user.displayName;
-  //alert(user.displayName);
-});
-
+//se añade un like a la publicacion
 const addLike = (idComentario) => {
   var user = firebase.auth().currentUser;
-  const dataComentario = refTask.child(idComentario);
+  const dataComentario = ref.child(idComentario);
   dataComentario.once('value', (snapshot) => {
     const data = snapshot.val();
     data.likeUser.push(user.uid);
@@ -190,9 +171,11 @@ const addLike = (idComentario) => {
     })
   });
 }
+
+//se quita un like a la publicaciom
 const deleteLike = (idComentario) => {
   var user = firebase.auth().currentUser;
-  const dataComentario = refTask.child(idComentario);
+  const dataComentario = ref.child(idComentario);
   dataComentario.once('value', (snapshot) => {
     const data = snapshot.val();
     //data.likeUser.push(user.uid);
@@ -201,7 +184,7 @@ const deleteLike = (idComentario) => {
       data.likeUser.splice(i, 1);
         break;
     }
-    console.log(data.likeUser);
+    //console.log(data.likeUser);
     const like = data.like-1
     if(like<0){
       like = 0;
