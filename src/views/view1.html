@@ -2,18 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>CRUD TASK</title>
+    <title>TimeLine</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main2.css">
   </head>
   
   <body>
-    <header>
+    <header class="class-header">
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
               <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
+                <h5 class="text-white h4">Perfil</h5>
+                <span class="text-muted">:)</span>
               </div>
             </div>
             <nav class="navbar navbar-dark bg-dark">
@@ -26,15 +26,20 @@
 
 
 
+    <div><br><br><br></div>
     <div class="container">
-      <div clas="row">
-        Bienvenido <label for="" id="user-name"></label>
-      </div>
-      <p>
-        <label for="new-task">Ingresa comentario:</label>
-        <input id="new-task" type="text">
-        <button>Add</button>
-      </p>
+        <div clas="row">
+          <label>¡Bienvenido!</label> <label for="" id="user-name"></label>
+        </div>
+        <p>
+          <label for="new-task">Ingresa comentario:</label>
+          <input id="new-task" type="text">
+          <!-- <button>Add</button> -->
+          <button type="button" class="btn btn-success">Publicar</button>
+        </p>
+    </div>
+
+    <div class="container">
       <h2>COMENTARIOS:</h2>
       <div id="incomplete-tasks">
       </div>
@@ -47,10 +52,12 @@
           <button class="delete">Delete</button>
         </div>
       </div>
-    </div>
     <div>
       <button id="close">Cerrar Sesion</button>
     </div>
+    </div>
+
+
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="../js/credential.js"></script>
     <script src="../js/appView1.js"></script>
