@@ -12,7 +12,6 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 //inicia las funciones principales y añade funcion sendCommentFirebase al boton de add publicacion
-
 const init = () => {
   addButton.addEventListener('click', sendCommentFirebase);
     ref = firebase.database().ref().child('comentario');
@@ -157,13 +156,6 @@ const btnCloseSesion = document.getElementById('close')
       location.href="../index.html";
     }).catch(function(error){
     });
-});
-
-let btnlike = document.getElementById('like');
-
-btnlike.addEventListener ("click", event =>{
-console.log("hola");
-
 });
 
 //se añade un like a la publicacion
